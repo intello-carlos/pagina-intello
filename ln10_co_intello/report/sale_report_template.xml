@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="inherit_sale_report" inherit_id="sale.report_saleorder_document">
+        <xpath expr="//div[@class='page']/h2" position="replace">
+            <div class="row pt-4">
+                <div class="col-6">
+                    <h2 class="mt16">
+                        <t t-if="not (env.context.get('proforma', False) or is_pro_forma)">
+                            <span t-if="doc.state not in ['draft','sent']">Order # </span>
+                            <span t-if="doc.state in ['draft','sent']">Quotation # </span>
+                        </t>
+                        <t t-if="env.context.get('proforma', False) or is_pro_forma">
+                            <span>Pro-Forma Invoice # </span>
+                        </t>
+                        <span t-field="doc.name"/>
+                    </h2>
+                </div>
+                <div class="col-6" style="font-size: 13pt !important;">
+                    <div t-field="doc.partner_id"/>
+                    <t t-if="doc.partner_id.document_type.code_short and doc.partner_id.document_type.with_digit"
+                       id="inv_tax_id_label">
+                        <span t-field="doc.partner_id.document_type.code_short"/>: <span
+                            t-esc="doc.partner_id._vat_with_code()"/><br/>
+                    </t>
+                    <t t-if="doc.partner_id.document_type.code_short and not doc.partner_id.document_type.with_digit">
+                        <span t-field="doc.partner_id.document_type.code_short"/>: <span
+                            t-field="doc.partner_id.vat"/><br/>
+                    </t>
+
+                    <div t-field="doc.partner_id.street"/>
+                    <span t-field="doc.partner_id.state_id"/><![CDATA[&nbsp;]]>
+                    <span t-field="doc.partner_id.city_id"/><![CDATA[&nbsp;]]>
+                    <span t-field="doc.partner_id.zip"/>
+                </div>
+            </div>
+        </xpath>
+
+        <xpath expr="//div[@class='page']" position="attributes">
+            <attribute name="style">font-size: 10pt !important;</attribute>
+        </xpath>
+
+    </template>
+
+</odoo>

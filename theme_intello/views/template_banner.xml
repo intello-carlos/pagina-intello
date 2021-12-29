@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <!-- Banner -->
+        <template id="banner_snippet_id" inherit_id="website.snippets" name="Intello Banner">
+            <xpath expr="//div[@id='snippet_structure']/div[@class='o_panel_body']" position="inside">
+                <t t-snippet="theme_intello.snippet_banner_intello"
+                   t-thumbail=""/>
+            </xpath>
+        </template>
+        <template id="snippet_banner_intello" name="Intello Banner">
+            <section id="snippet_banner_id" class="banner banner_home">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-7 offset-md-1 banner-app-padding">
+                            <div class="banner-title-text">
+                                <h1>
+                                    <span class="banner-title-top">Titulo 1</span>
+                                    <span class="banner-title-middle">Titulo 2</span>
+                                </h1>
+                            </div>
+                            <div style="banner-title-line">
+                                <hr class="bottom-line"/>
+                            </div>
+                            <div class="banner-subtitle-text">
+                                <h4 class="banner-subtitle">
+                                    Subtitulo normal
+                                    <span class="banner-subtitle-bold">Subtitulo Bold </span>
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="col-md-4"/>
+                    </div>
+                </div>
+            </section>
+
+        </template>
+
+        <!-- Open Sans-->
+        <template id="font_1_snippet_id" inherit_id="website.snippets" name="Texto Open Sans">
+            <xpath expr="//div[@id='snippet_content']/div[@class='o_panel_body']" position="inside">
+                <t t-snippet="theme_intello.snippet_text_open_sans"
+                   t-thumbail=""/>
+            </xpath>
+        </template>
+        <template id="snippet_text_open_sans" name="Texto Open">
+            <div class="s_share open_sans">
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                    laoreet dolore magna aliquam erat volutpat.</p>
+            </div>
+        </template>
+
+        <!-- Monserrat Bold -->
+        <template id="font_2_snippet_id" inherit_id="website.snippets" name="Texto Monserrat Bold">
+            <xpath expr="//div[@id='snippet_content']/div[@class='o_panel_body']" position="inside">
+                <t t-snippet="theme_intello.snippet_text_monserrat_bold"
+                   t-thumbail=""/>
+            </xpath>
+        </template>
+        <template id="snippet_text_monserrat_bold" name="Texto Monserrat Bold">
+            <div class="s_share monserrat_bold">
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                    laoreet dolore magna aliquam erat volutpat.</p>
+            </div>
+        </template>
+
+        <!-- Monserrat Alternates Black -->
+        <template id="font_3_snippet_id" inherit_id="website.snippets" name="Texto Monserrat Alternates Black">
+            <xpath expr="//div[@id='snippet_content']/div[@class='o_panel_body']" position="inside">
+                <t t-snippet="theme_intello.snippet_text_monserrat_alternates_black"
+                   t-thumbail=""/>
+            </xpath>
+        </template>
+        <template id="snippet_text_monserrat_alternates_black" name="Texto Monserrat Alternates Black">
+            <div class="s_share monserrat_alternates_b">
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                    laoreet dolore magna aliquam erat volutpat.</p>
+            </div>
+        </template>
+
+        <!-- Monserrat Light-->
+        <template id="font_4_snippet_id" inherit_id="website.snippets" name="Texto Monserrat Light">
+            <xpath expr="//div[@id='snippet_content']/div[@class='o_panel_body']" position="inside">
+                <t t-snippet="theme_intello.snippet_text_monserrat_light"
+                   t-thumbail=""/>
+            </xpath>
+        </template>
+        <template id="snippet_text_monserrat_light" name="Texto Monserrat Light">
+            <div class="s_share monserrat_light">
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                    laoreet dolore magna aliquam erat volutpat.</p>
+            </div>
+        </template>
+
+        <!-- Monserrat Extra Bold-->
+        <template id="font_5_snippet_id" inherit_id="website.snippets" name="Texto Monserrat Extra Bold">
+            <xpath expr="//div[@id='snippet_content']/div[@class='o_panel_body']" position="inside">
+                <t t-snippet="theme_intello.snippet_text_monserrat_extra_bold"
+                   t-thumbail=""/>
+            </xpath>
+        </template>
+        <template id="snippet_text_monserrat_extra_bold" name="Texto Monserrat Extra Bold">
+            <div class="s_share monserrat_extra_bold">
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                    laoreet dolore magna aliquam erat volutpat.</p>
+            </div>
+        </template>
+
+        <!-- Century Gothic Regular-->
+        <template id="font_6_snippet_id" inherit_id="website.snippets" name="Texto Century Gothic Regular">
+            <xpath expr="//div[@id='snippet_content']/div[@class='o_panel_body']" position="inside">
+                <t t-snippet="theme_intello.snippet_text_century_gothic_r"
+                   t-thumbail=""/>
+            </xpath>
+        </template>
+        <template id="snippet_text_century_gothic_r" name="Texto Century Gothic Regular">
+            <div class="s_share century_gothic_regular">
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                    laoreet dolore magna aliquam erat volutpat.</p>
+            </div>
+        </template>
+
+        <!-- Aller-->
+        <template id="font_7_snippet_id" inherit_id="website.snippets" name="Texto Aller">
+            <xpath expr="//div[@id='snippet_content']/div[@class='o_panel_body']" position="inside">
+                <t t-snippet="theme_intello.snippet_text_aller"
+                   t-thumbail=""/>
+            </xpath>
+        </template>
+        <template id="snippet_text_aller" name="Texto Century Gothic Regular">
+            <div class="s_share aller">
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                    laoreet dolore magna aliquam erat volutpat.</p>
+            </div>
+        </template>
+
+        <!--Quicksand-->
+        <template id="font_8_snippet_id" inherit_id="website.snippets" name="Texto Quicksand">
+            <xpath expr="//div[@id='snippet_content']/div[@class='o_panel_body']" position="inside">
+                <t t-snippet="theme_intello.snippet_text_quicksand"
+                   t-thumbail=""/>
+            </xpath>
+        </template>
+        <template id="snippet_text_quicksand" name="Texto Quicksand">
+            <div class="s_share quicksand">
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                    laoreet dolore magna aliquam erat volutpat.</p>
+            </div>
+        </template>
+
+
+    </data>
+</odoo>

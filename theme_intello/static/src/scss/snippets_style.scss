@@ -1,0 +1,104 @@
+// fonts
+@font-face {
+  font-family: "Open Sans" ;
+  src: url(/theme_intello/static/src/font/OPENSANS-SEMIBOLD.TTF) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat Alternates Black" ;
+  src: url(/theme_intello/static/src/font/MontserratAlternates-Bold_0.otf) format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat Bold" ;
+  src: url(/theme_intello/static/src/font/MONTSERRAT-BOLD.OTF) format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat Light" ;
+  src: url(/theme_intello/static/src/font/MONTSERRAT-LIGHT.OTF) format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat Extra Bold" ;
+  src: url(/theme_intello/static/src/font/MONTSERRAT-EXTRABOLD_0.OTF) format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Century Gothic Regular" ;
+  src: url(/theme_intello/static/src/font/GOTHIC.TTF) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Aller" ;
+  src: url(/theme_intello/static/src/font/aller-regular.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Quicksand" ;
+  src: url(/theme_intello/static/src/font/QUICKSAND-BOLD.OTF) format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+.open_sans {
+  font-family: "Open Sans";
+  font-weight: lighter;
+  font-size: 23pt;
+}
+
+.monserrat_bold {
+  font-family: "Montserrat Bold";
+  font-weight: bold;
+  font-size: 23pt;
+}
+
+.monserrat_alternates_b {
+  font-family: "Montserrat Alternates Black";
+  font-weight: bold;
+  font-size: 23pt;
+}
+
+.monserrat_light {
+  font-family: "Montserrat Light";
+  font-weight: lighter;
+  font-size: 23pt;
+}
+
+.monserrat_extra_bold {
+  font-family: "Montserrat Extra Bold";
+  font-weight: bold;
+  font-size: 23pt;
+}
+
+.century_gothic_regular {
+  font-family: "Century Gothic Regular";
+  font-weight: lighter;
+  font-size: 23pt;
+}
+
+.aller {
+  font-family: "Aller";
+  font-weight: lighter;
+  font-size: 23pt;
+}
+
+.quicksand {
+  font-family: "Quicksand";
+  font-weight: lighter;
+  font-size: 23pt;
+}
